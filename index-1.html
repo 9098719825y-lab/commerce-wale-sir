@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="hi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Commerce wale sir</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root{--bg:#f4f5fb;--cd:#fff;--tx:#181a2b;--mu:#697089;--pr:#5b4bf0;--pr2:#8b5cf6;--pt:#fff;--bd:#e6e8f2;--ok:#16a34a;--bad:#e11d48;--wa:#f59e0b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1019;--cd:#1a1c2b;--tx:#eef0fa;--mu:#9a9fb8;--pr:#8b83ff;--bd:#2a2d42;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1019;--cd:#1a1c2b;--tx:#eef0fa;--mu:#9a9fb8;--pr:#8b83ff;--bd:#2a2d42;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;padding-bottom:76px}
+main{max-width:520px;margin:0 auto;padding:14px}
+h1{font-size:21px;margin:2px 0 4px}h2{font-size:16px;margin:18px 0 8px}
+.cd{background:var(--cd);border:1px solid var(--bd);border-radius:16px;padding:12px;margin-bottom:10px}
+.r{display:flex;gap:10px;align-items:center;justify-content:space-between}.g{display:flex;gap:10px}.g>*{flex:1}
+.mu{color:var(--mu);font-size:13px}.b{font-weight:700}
+button,input,select,textarea{font:inherit}
+.btn{background:linear-gradient(135deg,var(--pr),var(--pr2));color:#fff;border:0;border-radius:12px;padding:10px 14px;font-weight:700}
+.btn.o{background:none;color:var(--pr);border:1px solid var(--pr)}.btn.w{width:100%}
+input,select,textarea{width:100%;padding:10px;border-radius:12px;border:1px solid var(--bd);background:var(--cd);color:var(--tx);margin-bottom:8px}
+.hero{background:linear-gradient(135deg,var(--pr),var(--pr2));color:#fff;border-radius:20px;padding:16px;margin-bottom:12px}
+.hero .mu{color:#e5e1ff}
+.ring{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;flex:none}
+.ring i{width:42px;height:42px;border-radius:50%;background:var(--pr2);display:grid;place-items:center;font-style:normal;font-size:12px;font-weight:700}
+.st{background:rgba(255,255,255,.18);border-radius:12px;padding:8px;text-align:center}.st b{display:block;font-size:18px}
+.chips{display:flex;gap:8px;overflow-x:auto;margin-bottom:10px;padding-bottom:2px}
+.chip{padding:6px 14px;border-radius:99px;border:1px solid var(--bd);background:var(--cd);color:var(--tx);white-space:nowrap}
+.chip.on{background:var(--pr);color:#fff;border-color:var(--pr)}
+.bar{height:7px;background:var(--bd);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pr),var(--pr2))}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--cd);border-top:1px solid var(--bd);display:flex;padding-bottom:env(safe-area-inset-bottom,0px);z-index:5}
+nav button{flex:1;background:none;border:0;color:var(--mu);padding:8px 2px;font-size:11px}nav button span{display:block;font-size:19px}
+nav button.on{color:var(--pr);font-weight:700}
+.vid{background:linear-gradient(135deg,#1e1b4b,#4c1d95);color:#fff;border-radius:16px;aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:8px;text-align:center;padding:10px;position:relative}
+.live{position:absolute;top:8px;left:8px;background:var(--bad);font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px}
+.opt{display:block;width:100%;text-align:left;background:var(--cd);color:var(--tx);border:1px solid var(--bd);border-radius:12px;padding:11px;margin-bottom:7px}
+.opt.sel{border-color:var(--pr);background:rgba(91,75,240,.12)}.opt.ok{border-color:var(--ok);background:rgba(22,163,74,.15)}.opt.bad{border-color:var(--bad);background:rgba(225,29,72,.15)}
+.pal{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}.pal button{width:34px;height:34px;border-radius:9px;border:1px solid var(--bd);background:var(--cd);color:var(--tx)}
+.pal .a{background:var(--ok);color:#fff}.pal .c{outline:2px solid var(--pr)}
+.tag{font-size:11px;background:rgba(91,75,240,.14);color:var(--pr);padding:2px 8px;border-radius:99px;font-weight:700}
+.chat{max-height:150px;overflow:auto;font-size:13px}
+:root{--bg:#f5f6fa;--tx:#0f172a;--mu:#64748b;--pr:#3730a3;--pr2:#3730a3;--bd:#e4e7ef;--sh:0 1px 2px rgba(15,23,42,.05),0 6px 18px rgba(15,23,42,.05)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1020;--cd:#131a2e;--tx:#e8ecf7;--mu:#93a0bd;--pr:#818cf8;--pr2:#818cf8;--bd:#222b45}}
+:root[data-theme="dark"]{--bg:#0b1020;--cd:#131a2e;--tx:#e8ecf7;--mu:#93a0bd;--pr:#818cf8;--pr2:#818cf8;--bd:#222b45;color-scheme:dark}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;letter-spacing:-.005em}
+.cd{border-radius:14px;box-shadow:var(--sh)}
+.btn{background:var(--pr);border-radius:10px;font-weight:600}
+.hero{background:linear-gradient(160deg,#0f1a3d,#312e81);border-radius:18px;box-shadow:var(--sh)}
+.ring i{background:#1e1b4b}.st{background:rgba(255,255,255,.1)}
+.chip{font-weight:500}.chip.on{background:var(--pr)}
+h2{font-size:15px;letter-spacing:.01em}
+nav{box-shadow:0 -4px 16px rgba(15,23,42,.06)}nav button{font-weight:500}nav button svg{display:block;margin:0 auto 3px}
+.tb{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}.tb>div{display:flex;align-items:center;gap:6px}.tb b{font-size:16px!important}
+.lg{width:46px;height:46px;border-radius:13px;background:var(--pr);color:#fff;display:grid;place-items:center;font-weight:800;font-size:24px}.lg.s{width:30px;height:30px;font-size:16px;border-radius:9px}
+.pill{white-space:nowrap;background:var(--cd);border:1px solid var(--bd);border-radius:99px;padding:4px 10px;font-size:12px;font-weight:600}
+.wk{display:flex;gap:8px;height:84px}.wk div{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px}.wk i{width:100%;background:var(--pr);border-radius:6px 6px 0 0;min-height:3px}.wk small{color:var(--mu);font-size:11px}
+</style></head><body>
+<main id="app"></main><nav id="nav"></nav>
+<script>
+const SUB=["Accountancy","Business Studies","Economics","Maths"],IC={Accountancy:"","Business Studies":"",Economics:"",Maths:""};
+const sv=p=>`<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${p}</svg>`;
+const ICN={h:sv('<path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>'),b:sv('<path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-6a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h7z"/>'),t:sv('<path d="M9 11l3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h9"/>'),c:sv('<path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12z"/>'),u:sv('<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>')};
+const QS={Accountancy:[["Partnership deed na ho to profit kis ratio me banta hai?",["Capital ratio","Barabar","Experience","Age"],1],["Goodwill kis type ka asset hai?",["Tangible","Fictitious","Intangible","Current"],2],["Journal me entry kis basis par hoti hai?",["Golden rules","Ledger","Balance","Cash only"],0]],
+"Business Studies":[["14 principles of management kisne diye?",["Taylor","Fayol","Drucker","Weber"],1],["Planning ka feature kaun sa hai?",["Past oriented","Goal oriented","Costless","Optional"],1],["Staffing ka pehla step kya hai?",["Training","Recruitment","Manpower planning","Selection"],2]],
+Economics:[["Demand ka law kya kehta hai?",["Price badhe demand badhe","Price badhe demand ghate","Koi relation nahi","Income se alag"],1],["GDP kya naapta hai?",["Sirf export","Final goods ki value","Sirf tax","Population"],1],["Repo rate kaun tay karta hai?",["SEBI","RBI","Finance Ministry","NITI Aayog"],1]],
+Maths:[["d/dx (x^2) = ?",["x","2x","x^2","2"],1],["2x2 matrix me kitne elements?",["2","3","4","6"],2],["log 1 = ?",["1","0","10","e"],1]]};
+const ALL=[];SUB.forEach(s=>QS[s].forEach(x=>ALL.push({s,q:x[0],o:x[1],a:x[2]})));
+const mk=(id,c,s,t,p,ch)=>({id,cls:c,s,t,p,ch:ch.map(x=>x)});
+const SEED=()=>({courses:[
+mk(1,12,"Accountancy","Accountancy Class 12 Pro",1499,["Partnership Basics","Goodwill","Reconstitution","Company Accounts"]),
+mk(2,12,"Business Studies","Business Studies Class 12",1299,["Nature of Management","Principles","Planning","Staffing"]),
+mk(3,12,"Economics","Economics Class 12",1299,["National Income","Money & Banking","Budget"]),
+mk(4,12,"Maths","Applied Maths Class 12",999,["Matrices","Derivatives","Probability"]),
+mk(5,11,"Accountancy","Accountancy Class 11 Pro",1299,["Intro","Journal","Ledger","Trial Balance"]),
+mk(6,11,"Business Studies","Business Studies Class 11",1199,["Business Nature","Forms of Business","Sectors"]),
+mk(7,11,"Economics","Economics Class 11",1099,["Statistics Intro","Collection of Data","Index Numbers"])],
+live:{t:"Goodwill Valuation Revision",tm:"Aaj 6:00 PM",tc:"CA Sharma"},doubts:[{id:1,n:"Riya",s:"Accountancy",q:"Goodwill me super profit aur average profit method me fark kya hai?",a:"Average profit me sirf normal avg liya jata hai; super profit me normal return se upar ka profit alag nikalte hain."}],rev:0,stu:134});
+let D,U,tab="home",cls=12,sub="All",cur=null,view=null,T=null,tmr=null,admin=false,tb="lec";
+const get=(k,d)=>{try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}};
+const put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+D={courses:[],live:{t:"-",tm:"",tc:""},doubts:[],rev:0,stu:0};U=get("cw_u",null)||{name:"",bought:[],done:{},bm:{},xp:0,tx:0,td:"",streak:0,last:"",scores:[],freeze:1,dark:0};
+const save=()=>{put("cw_u",U)};
+const SB="https://wlyafnutqihhgptppvlt.supabase.co",KEY="sb_publishable_iFyHd6zph-TMAekjq0_xuQ_SJF7_rZv";
+let S=get("cw_s",null);
+async function raw(p,o={}){const h={apikey:KEY,"Content-Type":"application/json",Authorization:"Bearer "+(S&&!o.anon?S.access_token:KEY),...(o.h||{})};const r=await fetch(SB+p,{method:o.m||"GET",headers:h,body:o.b?JSON.stringify(o.b):undefined});const t=await r.text();let j=null;try{j=t?JSON.parse(t):null}catch(e){j=t}return{ok:r.ok,st:r.status,j}}
+async function api(p,o={}){let r=await raw(p,o);if(r.st==401&&S&&S.refresh_token&&!o.anon){const q=await raw("/auth/v1/token?grant_type=refresh_token",{m:"POST",anon:1,b:{refresh_token:S.refresh_token}});if(q.ok){S=q.j;put("cw_s",S);r=await raw(p,o)}else{S=null;put("cw_s",null);U.ok=0;render()}}if(!r.ok)throw new Error((r.j&&(r.j.msg||r.j.message||r.j.error_description||r.j.error))||("Error "+r.st));return r.j}
+const rest=(t,o)=>api("/rest/v1/"+t,o);
+let st_;function syncP(){clearTimeout(st_);st_=setTimeout(()=>{if(S)rest("profiles?id=eq."+S.user.id,{m:"PATCH",b:{xp:U.xp,streak:U.streak,class:U.cl||12,name:U.name},h:{Prefer:"return=minimal"}}).catch(()=>{})},1500)}
+async function boot(){try{const id=S.user.id;
+const [pf,cs,cl,en,pr,db,lv,qs,tr,vd]=await Promise.all([rest("profiles?id=eq."+id),rest("courses?select=*&order=id"),rest("chapter_list?select=*&order=position"),rest("enrollments?select=course_id,amount&user_id=eq."+id),rest("progress?select=chapter_id&user_id=eq."+id),rest("doubts?select=*&order=id.desc&limit=50"),rest("live_class?id=eq.1"),rest("questions?select=*"),rest("test_results?select=*&user_id=eq."+id+"&order=id"),rest("chapters?select=id,video_id")]);
+const p=pf[0]||{};U.name=p.name||U.name;U.role=p.role;U.xp=p.xp||0;U.streak=p.streak||0;U.cl=p.class||U.cl;cls=U.cl||12;admin=p.role=="admin";
+D.courses=cs.map(c=>{const h=cl.filter(x=>x.course_id==c.id).sort((a,b)=>a.position-b.position);return{id:c.id,cls:c.class,s:c.subject,t:c.title,p:c.price,ch:h.map(x=>x.title),ids:h.map(x=>x.id),fr:h.map(x=>x.is_free),vids:h.map(x=>(vd.find(y=>y.id==x.id)||{}).video_id||"")}});
+U.bought=en.map(x=>x.course_id);const dd=new Set(pr.map(x=>x.chapter_id));U.done={};D.courses.forEach(c=>c.ids.forEach((i2,i)=>{if(dd.has(i2))U.done[c.id+"_"+i]=1}));
+D.doubts=db.map(d=>({id:d.id,n:"Student",s:d.subject,q:d.question,a:d.answer||""}));
+if(lv[0])D.live={t:lv[0].title,tm:lv[0].starts_at,tc:lv[0].teacher};
+if(qs.length){ALL.length=0;qs.forEach(x=>ALL.push({s:x.subject,q:x.question,o:x.options,a:x.answer}))}
+U.scores=tr.map(x=>({s:x.subject,m:x.score,t:x.total}));
+if(admin){const[ps,ae]=await Promise.all([rest("profiles?select=id"),rest("enrollments?select=amount")]);D.stu=ps.length;D.rev=ae.reduce((a,x)=>a+(x.amount||0),0)}
+save()}catch(e){alert("Data load nahi hua: "+e.message)}}
+const $=s=>document.getElementById(s),day=(o=0)=>{const d=new Date();d.setDate(d.getDate()-o);return d.toISOString().slice(0,10)};
+function xp(n){const t=day();if(U.td!=t){U.td=t;U.tx=0}U.xp+=n;U.tx+=n;U.h=U.h||{};U.h[t]=(U.h[t]||0)+n;if(U.last!=t){U.streak=(U.last==day(1))?U.streak+1:(U.last==day(2)&&U.freeze>0?(U.freeze--,U.streak+1):1);U.last=t}save();syncP()}
+const GOAL=50,lvl=()=>Math.floor(U.xp/100)+1;
+const mast=s=>{const l=D.courses.filter(c=>c.s==s&&U.bought.includes(c.id));let n=0,d=0;l.forEach(c=>c.ch.forEach((_,i)=>{n++;if(U.done[c.id+"_"+i])d++}));return n?Math.round(d/n*100):0};
+function nav(){const t=[["home","h","Home"],["learn","b","Courses"],["prac","t","Practice"],["dbt","c","Doubts"],["me","u","Profile"]];
+$("nav").innerHTML=t.map(([k,i,l])=>`<button class="${tab==k?"on":""}" onclick="go('${k}')">${ICN[i]}${l}</button>`).join("")}
+function go(t){tab=t;cur=null;view=null;if(!T||T.done||T.mode=="p"){clearInterval(tmr)}render()}
+function ccard(c){const b=U.bought.includes(c.id),d=c.ch.filter((_,i)=>U.done[c.id+"_"+i]).length;return `<div class="cd" onclick="oc(${c.id})"><div class="r"><span class="tag">${IC[c.s]} Class ${c.cls} · ${c.s}</span><span class="b">${b?"Enrolled":"₹"+c.p}</span></div><div class="b" style="margin:6px 0">${c.t}</div>${b?`<div class="bar"><i style="width:${d/c.ch.length*100}%"></i></div>`:`<div class="mu">${c.ch.length} chapters · 1st lecture FREE</div>`}</div>`}
+function oc(id){cur=D.courses.find(c=>c.id==id);tb="lec";PL=-1;render()}
+async function pay(id){const c=D.courses.find(x=>x.id==id);const cp=(prompt("Coupon code (agar hai). Try: FIRST20")||"").trim().toUpperCase();let pr=c.p;if(cp=="FIRST20")pr=Math.round(c.p*.8);if(!confirm("Payable: ₹"+pr+"\nTest mode: Razorpay abhi judna baaki hai. Test enroll karein?"))return;try{await rest("enrollments",{m:"POST",b:{user_id:S.user.id,course_id:id,amount:pr,payment_id:"test"},h:{Prefer:"return=minimal"}});U.bought.push(id);xp(20);render()}catch(e){alert("Enroll nahi hua: payment abhi connect nahi hai (agla step Razorpay). "+e.message)}}
+async function dn(id,i){const k=id+"_"+i,c=D.courses.find(x=>x.id==id),cid=c.ids[i];U.done[k]=!U.done[k];if(U.done[k])xp(15);save();render();try{if(U.done[k])await rest("progress",{m:"POST",b:{user_id:S.user.id,chapter_id:cid},h:{Prefer:"resolution=ignore-duplicates,return=minimal"}});else await rest("progress?user_id=eq."+S.user.id+"&chapter_id=eq."+cid,{m:"DELETE"})}catch(e){alert(e.message)}}
+function bm(k){U.bm[k]=!U.bm[k];save();render()}
+function home(){
+if(view=="live")return live();
+const p=Math.min(100,U.tx/GOAL*100),t=day()==U.td;
+const last=D.courses.find(c=>U.bought.includes(c.id));
+const lb=[["Aarav",1420],["Simran",1180],["Karan",960],[U.name||"You",U.xp]].sort((a,b)=>b[1]-a[1]);
+return `<div class="hero"><div class="r"><div><div class="mu">Namaste</div><h1>${U.name||"Student"}</h1><div class="mu">Level ${lvl()} · ${U.xp} XP</div></div><div class="ring" style="background:conic-gradient(#fff ${t?p:0}%,rgba(255,255,255,.25) 0)"><i>${t?U.tx:0}/${GOAL}</i></div></div>
+<div class="g" style="margin-top:12px"><div class="st"><b>${U.last==day()||U.last==day(1)?U.streak:0}</b>Day streak</div><div class="st"><b>${U.freeze}</b>Streak freeze</div><div class="st"><b>${Math.round(p)}%</b>Daily goal</div></div></div>
+<div class="cd" onclick="view='live';render()" style="border-color:var(--bad)"><div class="r"><div><span class="tag" style="background:rgba(225,29,72,.15);color:var(--bad)">● LIVE</span><div class="b" style="margin-top:4px">${D.live.t}</div><div class="mu">${D.live.tc} · ${D.live.tm}</div></div><button class="btn">Join</button></div></div>
+${last?`<h2>Continue learning</h2>${ccard(last)}`:""}
+<h2>This week</h2><div class="cd"><div class="wk">${[6,5,4,3,2,1,0].map(o=>{const k=day(o),v=(U.h||{})[k]||0;return `<div><i style="height:${Math.min(100,v/GOAL*100)}%"></i><small>${new Date(k).toLocaleDateString("en",{weekday:"narrow"})}</small></div>`}).join("")}</div></div><h2>Subject mastery</h2><div class="g" style="flex-wrap:wrap">${SUB.map(s=>`<div class="cd" style="flex:1 1 40%;margin:0"><div>${IC[s]} <b>${s}</b></div><div class="bar" style="margin:6px 0"><i style="width:${mast(s)}%"></i></div><div class="mu">${mast(s)}% mastered</div></div>`).join("")}</div>
+<h2>One-click PYQ</h2><div class="chips">${SUB.map(s=>`<button class="chip" onclick="stT('p','${s}')">${s}</button>`).join("")}</div>
+`}
+function live(){return `<button class="btn o" onclick="view=null;render()">← Back</button><div class="vid" style="margin-top:10px"><span class="live">LIVE</span>▶<div>${D.live.t}</div><div class="mu" style="color:#ddd">Yahan Bunny Stream / YouTube live chalega</div></div>
+<div class="cd"><div class="b">Live poll: Super profit kya hota hai?</div>${["Actual - Normal profit","Actual + Normal","Sirf average"].map((o,i)=>`<button class="opt" onclick="this.className='opt '+(${i}==0?'ok':'bad');xp(5)">${o}</button>`).join("")}</div>
+<div class="cd"><div class="b">Live chat</div><div class="chat" id="ch"><div>Aarav: sir sound clear hai 👍</div><div>Simran: notes kab milenge?</div></div><div class="g" style="margin-top:8px"><input id="cm" placeholder="Kuch likhein..." style="flex:3;margin:0"><button class="btn" onclick="const v=$('cm').value;if(v){$('ch').innerHTML+='<div>'+(U.name||'You')+': '+v.replace(/</g,'')+'</div>';$('cm').value=''}">Send</button></div></div>`}
+function learn(){
+if(cur){const b=U.bought.includes(cur.id);
+return `<button class="btn o" onclick="cur=null;render()">← Back</button><h1 style="margin-top:10px">${cur.t}</h1>
+${vplayer()}
+<div class="chips">${["0.5x","1x","1.25x","1.5x","2x"].map((s,i)=>`<button class="chip ${i==1?"on":""}" onclick="this.parentNode.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));this.classList.add('on')">${s}</button>`).join("")}</div>
+${b?"":`<button class="btn w" onclick="pay(${cur.id})">Enroll ₹${cur.p}</button>`}
+<div class="chips" style="margin-top:10px">${[["lec","Lectures"],["nt","Notes"],["pyq","PYQ"]].map(([k,l])=>`<button class="chip ${tb==k?"on":""}" onclick="tb='${k}';render()">${l}</button>`).join("")}</div>
+${tb=="lec"?cur.ch.map((x,i)=>{const k=cur.id+"_"+i,ok=b||(cur.fr&&cur.fr[i]);return `<div class="cd r"><div><b>${i+1}. ${x}</b><div class="mu">${ok?"▶ 25 min":"🔒 Locked"}</div></div><div class="g" style="flex:none">${ok?`<button class="chip" onclick="PL=${i};render();scrollTo(0,0)">▶</button><button class="chip" onclick="bm('${k}')">${U.bm[k]?"🔖":"＋"}</button><button class="btn ${U.done[k]?"":"o"}" onclick="dn(${cur.id},${i})">${U.done[k]?"✓":"Done"}</button>`:"🔒"}</div></div>`}).join(""):
+tb=="nt"?cur.ch.map((x,i)=>`<div class="cd r"><div><b>📄 ${x} - Notes</b><div class="mu">PDF · handwritten</div></div><span>${b?"⬇":"🔒"}</span></div>`).join(""):
+`<button class="btn w" onclick="stT('p','${cur.s}')">Is subject ke PYQ practice karein</button>`}`}
+const l=D.courses.filter(c=>c.cls==cls);
+return `<h1>Courses</h1><div class="chips">${[11,12].map(x=>`<button class="chip ${cls==x?"on":""}" onclick="cls=${x};render()">Class ${x}</button>`).join("")}</div>${l.map(ccard).join("")}
+<h2>🔖 Bookmarks</h2>${Object.keys(U.bm).filter(k=>U.bm[k]).map(k=>{const[c,i]=k.split("_"),co=D.courses.find(x=>x.id==c);return co?`<div class="cd">${co.ch[i]} <span class="mu">· ${co.s}</span></div>`:""}).join("")||'<p class="mu">Lecture par ＋ dabakar bookmark karein.</p>'}`}
+function stT(m,s){const q=(s?ALL.filter(x=>x.s==s):[...ALL].sort(()=>Math.random()-.5));T={m,q,i:0,a:q.map(()=>null),st:Date.now(),left:600,sub:s||"Mock",done:false};clearInterval(tmr);tab="prac";view=null;cur=null;
+if(m=="m")tmr=setInterval(()=>{T.left--;const e=$("tm");if(e)e.textContent=fmt(T.left);if(T.left<=0)sub_()},1000);render()}
+const fmt=s=>Math.floor(s/60)+":"+String(s%60).padStart(2,"0");
+function pk(j){if(T.m=="p"&&T.a[T.i]!=null)return;T.a[T.i]=j;if(T.m=="p")xp(j==T.q[T.i].a?10:2);render()}
+function sub_(){clearInterval(tmr);T.done=true;T.tt=Math.round((Date.now()-T.st)/1000);const c=T.q.filter((x,i)=>T.a[i]==x.a).length;xp(c*5);U.scores.push({s:T.sub,m:c,t:T.q.length});save();render();if(S)rest("test_results",{m:"POST",b:{user_id:S.user.id,subject:T.sub,score:c,total:T.q.length},h:{Prefer:"return=minimal"}}).catch(()=>{})}
+function prac(){
+if(T){const n=T.q.length;
+if(T.done||T.i>=n&&T.m=="p"){const c=T.q.filter((x,i)=>T.a[i]==x.a).length,w=T.q.map((x,i)=>[x,i]).filter(([x,i])=>T.a[i]!=x.a);
+const bs=SUB.map(s=>{const z=T.q.map((x,i)=>[x,i]).filter(([x])=>x.s==s);return z.length?[s,Math.round(z.filter(([x,i])=>T.a[i]==x.a).length/z.length*100)]:null}).filter(Boolean);
+return `<h1>Result</h1><div class="hero"><div class="r"><div><div class="b" style="font-size:28px">${c}/${n}</div><div class="mu">Accuracy ${Math.round(c/n*100)}% · +${c*5} XP</div></div><div class="mu">${T.tt!=null?"Time "+fmt(T.tt):""}</div></div></div>
+<h2>Subject analysis</h2><div class="cd">${bs.map(([s,v])=>`<div class="r"><span>${s}</span><b>${v}%</b></div><div class="bar" style="margin:4px 0 8px"><i style="width:${v}%"></i></div>`).join("")}</div>
+<h2>Galat jawab (review)</h2>${w.map(([x,i])=>`<div class="cd"><div class="b">${x.q}</div><div style="color:var(--ok)">✓ ${x.o[x.a]}</div><div class="mu">${T.a[i]==null?"Skip kiya":"Aapka: "+x.o[T.a[i]]}</div></div>`).join("")||"<p>Sab sahi! 🔥</p>"}
+<button class="btn w" onclick="T=null;render()">Done</button>`}
+const q=T.q[T.i],a=T.a[T.i];
+return `<div class="r"><span class="mu">${q.s} · Q${T.i+1}/${n}</span>${T.m=="m"?`<b id="tm">${fmt(T.left)}</b>`:""}</div>
+<h2>${q.q}</h2>${q.o.map((o,j)=>{let c="";if(T.m=="p"&&a!=null)c=j==q.a?"ok":j==a?"bad":"";else if(a==j)c="sel";return `<button class="opt ${c}" onclick="pk(${j})">${o}</button>`}).join("")}
+${T.m=="m"?`<div class="pal">${T.q.map((_,i)=>`<button class="${T.a[i]!=null?"a":""} ${i==T.i?"c":""}" onclick="T.i=${i};render()">${i+1}</button>`).join("")}</div><div class="g">${T.i>0?`<button class="btn o" onclick="T.i--;render()">Prev</button>`:""}${T.i<n-1?`<button class="btn" onclick="T.i++;render()">Next</button>`:`<button class="btn" onclick="sub_()">Submit</button>`}</div>`
+:`${a!=null?`<button class="btn w" onclick="T.i++;render()">${T.i<n-1?"Next":"Result"}</button>`:""}`}
+<button class="btn o w" style="margin-top:10px" onclick="clearInterval(tmr);T=null;render()">Quit</button>`}
+return `<h1>Practice</h1><div class="hero"><div class="b">Full Mock Test</div><div class="mu">${ALL.length} questions · 10 min · detailed analysis</div><button class="btn w" style="background:#fff;color:#5b4bf0;margin-top:10px" onclick="stT('m')">Start mock</button></div>
+<h2>PYQ practice (instant feedback)</h2>${SUB.map(s=>`<div class="cd r"><div><b>${IC[s]} ${s}</b><div class="mu">${ALL.filter(x=>x.s==s).length} PYQs</div></div><button class="btn" onclick="stT('p','${s}')">Practice</button></div>`).join("")}
+<h2>Recent scores</h2>${U.scores.slice(-5).reverse().map(x=>`<div class="cd r"><span>${x.s}</span><b>${x.m}/${x.t}</b></div>`).join("")||'<p class="mu">Abhi koi test nahi diya.</p>'}`}
+function dbt(){return `<h1>Doubts</h1><p class="mu">Teacher se seedha poochhein. (Asli app me AI Guru 24/7 jawab dega.)</p><div class="cd"><select id="ds">${SUB.map(s=>`<option>${s}</option>`).join("")}</select><textarea id="dq" rows="3" placeholder="Apna doubt likhein..."></textarea><button class="btn w" onclick="askD()">Doubt bhejein</button></div>
+${D.doubts.map(d=>`<div class="cd"><span class="tag">${d.s}</span> <span class="mu">${d.n}</span><div class="b" style="margin:4px 0">${d.q}</div>${d.a?`<div style="border-left:3px solid var(--ok);padding-left:8px">👨‍🏫 ${d.a}</div>`:'<div class="mu">⏳ Teacher ka jawab aana baaki</div>'}</div>`).join("")}`}
+function me(){
+if(view=="adm")return adm();if(view=="ved")return ved();
+return `<h1>Profile</h1><div class="cd"><input id="nm" value="${U.name}" placeholder="Aapka naam"><button class="btn w" onclick="U.name=$('nm').value;save();syncP();render()">Save</button></div>
+<div class="cd r"><span>Level ${lvl()} · ${U.xp} XP</span><span>Streak: ${U.streak} days</span></div>
+<div class="cd r"><span>Dark mode</span><button class="btn o" onclick="U.dark=U.dark?0:1;save();render()">${U.dark?"On":"Off"}</button></div><div class="cd mu">Parent report, asli OTP, offline download aur notifications backend ke baad judenge.</div>
+${U.role=="admin"?`<button class="btn o w" onclick="view='adm';render()">Admin / Teacher panel</button>`:""}<button class="btn o w" style="margin-top:8px" onclick="S=null;put('cw_s',null);U.ok=0;OB=0;admin=false;save();render()">Logout</button>`}
+function adm(){
+if(!admin)return `<button class="btn o" onclick="view=null;render()">← Back</button><h1 style="margin-top:10px">Admin login</h1><div class="cd"><input id="pin" type="password" placeholder="PIN (demo: 1234)"><button class="btn w" onclick="if($('pin').value=='1234'){admin=true;render()}else alert('Galat PIN')">Login</button></div>`;
+return `<button class="btn o" onclick="view=null;render()">← Back</button><h1 style="margin-top:10px">Admin panel</h1><div class="g"><div class="cd"><div class="mu">Students</div><div class="b">${D.stu}</div></div><div class="cd"><div class="mu">Revenue</div><div class="b">₹${D.rev}</div></div></div>
+<h2>Live class set karein</h2><div class="cd"><input id="lt" value="${D.live.t}"><input id="lm" value="${D.live.tm}"><button class="btn w" onclick="updLive()">Update live</button></div>
+<h2>Naya course</h2><div class="cd"><input id="ct" placeholder="Title"><div class="g"><select id="cc"><option>11</option><option selected>12</option></select><select id="cs">${SUB.map(s=>`<option>${s}</option>`).join("")}</select></div><input id="cp" type="number" placeholder="Price ₹"><input id="cch" placeholder="Chapters (comma se)"><button class="btn w" onclick="addC()">Add course</button></div>
+<h2>Courses</h2>${D.courses.length?"":'<button class="btn w" onclick="seed()">Sample courses load karein</button>'}${D.courses.map(c=>`<div class="cd r"><div><b>${c.t}</b><div class="mu">₹${c.p}</div></div><div class="g" style="flex:none"><button class="btn o" onclick="edV(${c.id})">Videos</button><button class="btn o" onclick="delC(${c.id})">🗑</button></div></div>`).join("")}
+<h2>Doubts reply</h2>${D.doubts.filter(d=>!d.a).map(d=>`<div class="cd"><div class="b">${d.q}</div><input id="r${d.id}" placeholder="Jawab likhein"><button class="btn w" onclick="repD(${d.id})">Reply</button></div>`).join("")||'<p class="mu">Koi pending doubt nahi.</p>'}
+`}
+async function addC(){const t=$("ct").value.trim();if(!t||!$("cp").value)return alert("Title aur price bharein");try{const r=await rest("courses",{m:"POST",b:{class:+$("cc").value,subject:$("cs").value,title:t,price:+$("cp").value},h:{Prefer:"return=representation"}});const ch=($("cch").value||"Chapter 1").split(",").map((x,i)=>({course_id:r[0].id,position:i+1,title:x.trim(),is_free:i==0}));await rest("chapters",{m:"POST",b:ch,h:{Prefer:"return=minimal"}});await boot();render()}catch(e){alert(e.message)}}
+async function askD(){const q=$("dq").value.trim();if(!q)return;try{const r=await rest("doubts",{m:"POST",b:{user_id:S.user.id,subject:$("ds").value,question:q},h:{Prefer:"return=representation"}});D.doubts.unshift({id:r[0].id,n:U.name||"You",s:r[0].subject,q,a:""});xp(5);render()}catch(e){alert(e.message)}}
+async function delC(id){if(!confirm("Delete karein?"))return;try{await rest("courses?id=eq."+id,{m:"DELETE"});await boot();render()}catch(e){alert(e.message)}}
+async function updLive(){try{await rest("live_class?id=eq.1",{m:"PATCH",b:{title:$("lt").value,starts_at:$("lm").value},h:{Prefer:"return=minimal"}});D.live.t=$("lt").value;D.live.tm=$("lm").value;alert("Live update ho gaya")}catch(e){alert(e.message)}}
+async function repD(id){const v=$("r"+id).value.trim();if(!v)return;try{await rest("doubts?id=eq."+id,{m:"PATCH",b:{answer:v},h:{Prefer:"return=minimal"}});D.doubts.find(x=>x.id==id).a=v;render()}catch(e){alert(e.message)}}
+let PL=-1,VE=0;
+function vsrc(v){if(!v)return"";let m=v.match(/embed\/(\d+)\/([\w-]+)/)||v.match(/^(\d+)\/([\w-]+)$/);if(m)return"https://iframe.mediadelivery.net/embed/"+m[1]+"/"+m[2]+"?preload=true";m=v.match(/(?:v=|youtu\.be\/|embed\/)([\w-]{11})/)||v.match(/^([\w-]{11})$/);return m?"https://www.youtube-nocookie.com/embed/"+m[1]+"?rel=0&modestbranding=1":""}
+function vplayer(){const v=PL>=0&&cur.vids?vsrc(cur.vids[PL]):"";return v?`<div class="vid" style="padding:0;overflow:hidden"><iframe src="${v}" style="width:100%;height:100%;border:0" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe></div>`:`<div class="vid">▶<div class="mu" style="color:#ddd">${PL>=0?"Is lecture ka video abhi upload nahi hua":"Lecture chunne ke liye ▶ dabayein"}</div></div>`}
+function edV(id){VE=id;view="ved";render()}
+function ved(){const c=D.courses.find(x=>x.id==VE);return `<button class="btn o" onclick="view='adm';render()">← Back</button><h1 style="margin-top:10px">${c.t}</h1><p class="mu">Har chapter ke aage Bunny embed link (ya YouTube unlisted link) paste karein.</p>${c.ch.map((t,i)=>`<div class="cd"><b>${i+1}. ${t}</b><input id="v${c.ids[i]}" value="${(c.vids[i]||"").replace(/"/g,"")}" placeholder="Video link"></div>`).join("")}<button class="btn w" onclick="svV()">Save videos</button>`}
+async function svV(){const c=D.courses.find(x=>x.id==VE);try{for(let i=0;i<c.ids.length;i++){const v=$("v"+c.ids[i]).value.trim();if(v!=(c.vids[i]||"")){await rest("chapters?id=eq."+c.ids[i],{m:"PATCH",b:{video_id:v||null},h:{Prefer:"return=minimal"}});c.vids[i]=v}}alert("Videos save ho gaye")}catch(e){alert(e.message)}}
+async function seed(){try{for(const c of SEED().courses){const r=await rest("courses",{m:"POST",b:{class:c.cls,subject:c.s,title:c.t,price:c.p},h:{Prefer:"return=representation"}});await rest("chapters",{m:"POST",b:c.ch.map((x,i)=>({course_id:r[0].id,position:i+1,title:x,is_free:i==0})),h:{Prefer:"return=minimal"}})}await boot();render()}catch(e){alert(e.message)}}
+let OB=0;
+function onb(){const su=OB==1;return `<div style="padding:28px 2px"><div class="lg">C</div><h1 style="font-size:26px;margin-top:16px">Commerce wale sir</h1><p class="mu">Class 11 aur 12 Commerce ki complete taiyari: live classes, notes, PYQ aur mock tests.</p><div class="cd" style="margin-top:18px">${su?`<input id="on" placeholder="Aapka naam"><input id="om" type="tel" maxlength="10" placeholder="Mobile number"><select id="oc"><option value="12">Class 12</option><option value="11">Class 11</option></select>`:""}<input id="oe" type="email" placeholder="Email"><input id="op" type="password" placeholder="Password (min 6 akshar)"><button class="btn w" id="ob" onclick="auth()">${su?"Account banayein":"Login"}</button><p class="mu" style="text-align:center;margin:10px 0 0" onclick="OB=${su?0:1};render()"><u>${su?"Pehle se account hai? Login":"Naya account banayein"}</u></p></div></div>`}
+async function auth(){const su=OB==1,e=$("oe").value.trim(),pw=$("op").value;if(!e||pw.length<6)return alert("Email aur 6+ akshar ka password daalein");let n,m;if(su){n=$("on").value.trim();m=$("om").value.trim();if(!n||!/^\d{10}$/.test(m))return alert("Naam aur 10 digit mobile daalein")}
+$("ob").disabled=true;try{let r;if(su){r=await raw("/auth/v1/signup",{m:"POST",anon:1,b:{email:e,password:pw,data:{name:n,phone:m}}});if(r.ok&&!(r.j&&r.j.access_token)){alert("Account ban gaya. Email par confirmation link gaya hai, use kholkar Login karein.");OB=0;return render()}}else r=await raw("/auth/v1/token?grant_type=password",{m:"POST",anon:1,b:{email:e,password:pw}});
+if(!r.ok)throw new Error((r.j&&(r.j.msg||r.j.error_description||r.j.message))||"Login fail");S=r.j;put("cw_s",S);if(su){U.name=n;U.ph=m;U.cl=+$("oc").value}U.ok=1;await boot();if(su)syncP();save();render()}catch(x){alert(x.message);if($("ob"))$("ob").disabled=false}}
+const topbar=()=>`<div class="tb"><div><div class="lg s">C</div><b style="font-size:17px">Commerce wale sir</b></div><div><span class="pill">${U.last==day()||U.last==day(1)?U.streak:0} day</span><span class="pill">Class ${U.cl||cls}</span></div></div>`;
+function ap(){U.dark?document.documentElement.setAttribute("data-theme","dark"):document.documentElement.removeAttribute("data-theme")}
+function render(){ap();if(U.cl&&!window._c){cls=U.cl;window._c=1}if(!U.ok){$("nav").innerHTML="";$("app").innerHTML=onb();return}nav();$("app").innerHTML=topbar()+{home,learn,prac,dbt,me}[tab]();if(!T||T.done)scrollTo(0,0)}
+if(U.ok&&!S)U.ok=0;render();if(U.ok)boot().then(render);
+</script></body></html>
